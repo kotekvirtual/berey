@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Edificio Antae es tu nuevo hogar en Laguna de Duero, con terrazas amplias, piscina y rodeado de naturaleza. Descubre nuestras viviendas de 2, 3 y 4 dormitorios diseñadas para tu confort y calidad de vida.">
-  <title>Edificio Antae</title>
+  <meta name="description"
+    content="Residencial Berey es tu nuevo hogar en Laguna de Duero, con terrazas amplias, piscina y rodeado de naturaleza. Descubre nuestras viviendas de 2, 3 y 4 dormitorios diseñadas para tu confort y calidad de vida.">
+  <title>Residencial Berey</title>
   <link rel="icon" type="image/svg" href="/content/iconos/torcasa.webp">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="/index.js"></script>
@@ -13,8 +15,8 @@
       theme: {
         extend: {
           colors: {
-            primary: '#119A80',
-            muted: 'hsl(169, 66%, 41%)',
+            primary: 'hsl(14, 23%, 64%)',
+            muted: 'hsl(14, 23%, 44%)',
             background: '#ffffff',
             foreground: '#f3f4f6',
           },
@@ -34,14 +36,16 @@
     }
   </script>
 </head>
+
 <body class="flex flex-col min-h-screen">
   <header id="header" class="fixed top-0 z-50 w-full transition-all duration-300">
     <div class="container flex h-16 md:h-24 items-center justify-between">
       <a href="#inicio" class="flex items-center space-x-2">
-        <span id="headerTitle" class="text-xl md:text-2xl font-bold text-white">Edificio Antae</span>
+        <span id="headerTitle" class="text-xl md:text-2xl font-bold text-white">Residencial Berey</span>
       </a>
       <nav id="headerNav" class="hidden md:flex gap-6">
-        <a href="#caracteristicas" class="text-sm md:text-base font-medium hover:underline underline-offset-4 text-white">
+        <a href="#caracteristicas"
+          class="text-sm md:text-base font-medium hover:underline underline-offset-4 text-white">
           Características
         </a>
         <a href="#viviendas" class="text-sm md:text-base font-medium hover:underline underline-offset-4 text-white">
@@ -54,33 +58,27 @@
           Contacto
         </a>
       </nav>
-      <a href="#contacto" class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-white hover:bg-primary/90 h-10 md:h-12 md:text-lg px-4 md:px-6 lg:px-12 py-2">
+      <a href="#contacto"
+        class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-white hover:bg-muted h-10 md:h-12 md:text-lg px-4 md:px-6 lg:px-12 py-2">
         Pedir cita
       </a>
     </div>
   </header>
-  
-  
+
+
   <main id="inicio" class="flex-1">
     <section class="relative h-screen w-full overflow-hidden">
-      <video 
-        autoplay 
-        loop 
-        muted 
-        playsinline
-        preload="none"
-        poster="/content/full/imagenes/fotograma-1.webp"
-        class="absolute top-0 left-0 w-full h-full object-cover"
-        style="pointer-events: none;">
-        <source src="/content/full/videos/video-antae.webm" type="video/webm">
+      <video autoplay loop muted playsinline preload="none" poster="/content/full/imagenes/fotograma-1.webp"
+        class="absolute top-0 left-0 w-full h-full object-cover" style="pointer-events: none;">
+        <source src="/content/full/videos/video-berey.webm" type="video/webm">
       </video>
       <div class="absolute inset-0 bg-black/40">
         <div class="container h-full flex flex-col justify-center text-white">
           <h1 class="text-3xl md:text-6xl font-bold max-w-3xl">
-            Donde la naturaleza y el comfort se encuentran
+            El hogar que tu familia necesita
           </h1>
           <p class="mt-4 text-xl md:text-2xl max-w-xl">
-            Tu nuevo hogar en Laguna de Duero, con terrazas amplias, piscina y rodeado de naturaleza
+            Chalets adosados de 4 y 5 dormitorios con amplios patios, garaje privado en Laguna de Duero.
           </p>
         </div>
       </div>
@@ -96,25 +94,25 @@
             </div>
             <h3 class="text-xl font-bold mb-2 text-center">Excelente Ubicación</h3>
             <p class="text-gray-500 text-center">
-             Situado a 5 minutos de Laguna de Duero y próximo a la naturaleza.
+              Situado a 5 minutos de Laguna de Duero y próximo a la naturaleza.
             </p>
           </div>
           <div class="bg-background p-6 rounded-lg flex flex-col items-center">
             <div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center -mt-10 mb-4">
               <img src="/content/iconos/terraza.svg" alt="Terraza" class="w-8 h-8 brightness-0 invert">
             </div>
-            <h3 class="text-xl font-bold mb-2 text-center">Amplias Terrazas</h3>
+            <h3 class="text-xl font-bold mb-2 text-center">Jardín Privado</h3>
             <p class="text-gray-500 text-center">
-              Todas las viviendas cuentan con amplias terrazas.
+              De 40 a 70 m2 para disfrutar del exterior todo el año
             </p>
           </div>
           <div class="bg-background p-6 rounded-lg flex flex-col items-center">
             <div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center -mt-10 mb-4">
-              <img src="/content/iconos/piscina.svg" alt="Piscina" class="w-8 h-8 brightness-0 invert">
+              <img src="/content/iconos/garaje.svg" alt="Garaje" class="w-8 h-8 brightness-0 invert">
             </div>
-            <h3 class="text-xl font-bold mb-2 text-center">Piscina</h3>
+            <h3 class="text-xl font-bold mb-2 text-center">Garaje privado</h3>
             <p class="text-gray-500 text-center">
-              Piscina y espacios verdes diseñadas para el descanso.
+              Garaje interior y zona exterior semicubierta para aparcamiento adicional.
             </p>
           </div>
         </div>
@@ -128,15 +126,23 @@
           <div class="order-2 md:order-1">
             <h2 class="text-3xl md:text-4xl font-bold mb-6">Tu nuevo hogar te espera</h2>
             <p class="text-gray-500 mb-4">
-              Imagina vivir en un entorno tranquilo, rodeado de naturaleza y a pocos minutos del centro de Laguna de Duero. Antae II es una promoción diseñada para ofrecerte calidad de vida, confort y eficiencia energética.
+              Imagina vivir en un adosado moderno, amplio y luminoso, ubicado en una zona tranquila y
+              residencial a pocos minutos de Laguna de Duero. Berey II es una promoción diseñada para quienes buscan
+              espacio, privacidad y calidad de vida.
+            </p>
+            <p class="text-gray-500 mb-4">
+              Chalets adosados de 4 y 5 dormitorios, con amplios patios privados de 40 a 70 m², garaje interior y
+              aparcamiento adicional semicubierto. Cocinas abiertas al salón, grandes ventanales, aerotermia y suelo
+              radiante/refrescante para disfrutar del máximo confort durante todo el año.
             </p>
             <p class="text-gray-500">
-              44 viviendas de 2, 3 y 4 dormitorios, todas con terraza, garaje y trastero. Aerotermia, suelo radiante y refrescante y acabados modernos para que disfrutes de un hogar cómodo, eficiente y preparado para el futuro.
+              Un hogar eficiente, moderno y preparado para acompañar cada etapa de tu vida.
             </p>
           </div>
           <!-- Imagen -->
           <div class="order-1 md:order-2">
-            <img src="/content/full/imagenes/2507_RB_RESIDENCIAL_LAGUNA_EXT_3.webp" alt="Edificio Antae" class="rounded-lg shadow-lg object-cover w-full h-80 md:h-full">
+            <img src="/content/full/imagenes/VISTA-ESQUINA-CALIDAD-INTERNET-scaled (3).webp" alt="Residencial Berey"
+              class="rounded-lg shadow-lg object-cover w-full h-80 md:h-full">
           </div>
         </div>
       </div>
@@ -145,27 +151,37 @@
       <div class="container">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Galería</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          <img src="/content/thumbs/imagenes/2507_RB_RESIDENCIAL_LAGUNA_EXT_1.webp" alt="Exterior 1" class="w-full h-60 object-cover rounded-lg cursor-pointer" onclick="openGaleriaModal('/content/full/imagenes/2507_RB_RESIDENCIAL_LAGUNA_EXT_1.webp')">
-          <img src="/content/thumbs/imagenes/2507_RB_RESIDENCIAL_LAGUNA_EXT_2.webp" alt="Exterior 2" class="w-full h-60 object-cover rounded-lg cursor-pointer" onclick="openGaleriaModal('/content/full/imagenes/2507_RB_RESIDENCIAL_LAGUNA_EXT_2.webp')">
-          <img src="/content/thumbs/imagenes/2507_RB_RESIDENCIAL_LAGUNA_EXT_3.webp" alt="Exterior 3" class="w-full h-60 object-cover rounded-lg cursor-pointer" onclick="openGaleriaModal('/content/full/imagenes/2507_RB_RESIDENCIAL_LAGUNA_EXT_3.webp')">
-          <img src="/content/thumbs/imagenes/2507_RB_RESIDENCIAL_LAGUNA_EXT_4.webp" alt="Exterior 4" class="w-full h-60 object-cover rounded-lg cursor-pointer" onclick="openGaleriaModal('/content/full/imagenes/2507_RB_RESIDENCIAL_LAGUNA_EXT_4.webp')">
-          <img src="/content/thumbs/imagenes/VISTA TERRAZA PRINCIPAL.webp" alt="Vista Terraza Principal" class="w-full h-60 object-cover rounded-lg cursor-pointer" onclick="openGaleriaModal('/content/full/imagenes/VISTA TERRAZA PRINCIPAL.webp')">
+          <img src="/content/thumbs/imagenes/DEF_2020_12_26__04-Interior-01-scaled (1).webp" alt="Interior 1"
+            class="w-full h-60 object-cover rounded-lg cursor-pointer"
+            onclick="openGaleriaModal('/content/full/imagenes/DEF_2020_12_26__04-Interior-01-scaled (1).webp')">
+          <img src="/content/thumbs/imagenes/DEF_2020_12_26__05-Interior-02-scaled (1).webp" alt="Interior 2"
+            class="w-full h-60 object-cover rounded-lg cursor-pointer"
+            onclick="openGaleriaModal('/content/full/imagenes/DEF_2020_12_26__05-Interior-02-scaled (1).webp')">
+          <img src="/content/thumbs/imagenes/DEF_2020_12_26__04-Interior-03-scaled (1).webp" alt="Interior 3"
+            class="w-full h-60 object-cover rounded-lg cursor-pointer"
+            onclick="openGaleriaModal('/content/full/imagenes/DEF_2020_12_26__04-Interior-03-scaled (1).webp')">
+          <img src="/content/thumbs/imagenes/VISTA-ESQUINA-CALIDAD-INTERNET-scaled (3).webp" alt="Vista Esquina"
+            class="w-full h-60 object-cover rounded-lg cursor-pointer"
+            onclick="openGaleriaModal('/content/full/imagenes/VISTA-ESQUINA-CALIDAD-INTERNET-scaled (3).webp')">
         </div>
       </div>
     </section>
     <section id="viviendas" class="py-16 md:py-24">
       <div class="container">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Viviendas disponibles</h2>
-        
+
         <!-- Filtros -->
         <div class="flex flex-col sm:flex-row justify-center gap-4 mb-8">
-          <button onclick="filterViviendas('2dorm')" class="filter-btn active px-6 py-2 rounded-md bg-primary text-white hover:bg-muted hover:text-white transition-colors">
+          <button onclick="filterViviendas('2dorm')"
+            class="filter-btn active px-6 py-2 rounded-md bg-primary text-white hover:bg-muted hover:text-white transition-colors">
             <span class="pointer-events-none">2 dormitorios</span>
           </button>
-          <button onclick="filterViviendas('3dorm')" class="filter-btn px-6 py-2 rounded-md hover:bg-muted hover:text-white transition-colors">
+          <button onclick="filterViviendas('3dorm')"
+            class="filter-btn px-6 py-2 rounded-md hover:bg-muted hover:text-white transition-colors">
             <span class="pointer-events-none">3 dormitorios</span>
           </button>
-          <button onclick="filterViviendas('4dorm')" class="filter-btn px-6 py-2 rounded-md hover:bg-muted hover:text-white transition-colors">
+          <button onclick="filterViviendas('4dorm')"
+            class="filter-btn px-6 py-2 rounded-md hover:bg-muted hover:text-white transition-colors">
             <span class="pointer-events-none">4 dormitorios</span>
           </button>
         </div>
@@ -173,140 +189,228 @@
         <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="viviendasGrid">
           <!-- 2 Dormitorios -->
           <div class="vivienda-item 2dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/2dorm/01_PORTAL1_BAJO_A.webp" alt="Portal 1 Bajo A" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/2dorm/01_PORTAL1_BAJO_A.webp')" />
+            <img src="/content/thumbs/fichas/2dorm/01_PORTAL1_BAJO_A.webp" alt="Portal 1 Bajo A"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/2dorm/01_PORTAL1_BAJO_A.webp')" />
           </div>
           <div class="vivienda-item 2dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/2dorm/02_PORTAL4_BAJO_A.webp" alt="Portal 4 Bajo A" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/2dorm/02_PORTAL4_BAJO_A.webp')" />
+            <img src="/content/thumbs/fichas/2dorm/02_PORTAL4_BAJO_A.webp" alt="Portal 4 Bajo A"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/2dorm/02_PORTAL4_BAJO_A.webp')" />
           </div>
           <div class="vivienda-item 2dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/2dorm/05_PORTAL1_PRIMERO_C.webp" alt="Portal 1 Primero C" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/2dorm/05_PORTAL1_PRIMERO_C.webp')" />
+            <img src="/content/thumbs/fichas/2dorm/05_PORTAL1_PRIMERO_C.webp" alt="Portal 1 Primero C"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/2dorm/05_PORTAL1_PRIMERO_C.webp')" />
           </div>
           <div class="vivienda-item 2dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/2dorm/09_PORTAL2_PRIMERO_C.webp" alt="Portal 2 Primero C" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/2dorm/09_PORTAL2_PRIMERO_C.webp')" />
+            <img src="/content/thumbs/fichas/2dorm/09_PORTAL2_PRIMERO_C.webp" alt="Portal 2 Primero C"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/2dorm/09_PORTAL2_PRIMERO_C.webp')" />
           </div>
           <div class="vivienda-item 2dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/2dorm/13_PORTAL3_PRIMERO_C.webp" alt="Portal 3 Primero C" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/2dorm/13_PORTAL3_PRIMERO_C.webp')" />
+            <img src="/content/thumbs/fichas/2dorm/13_PORTAL3_PRIMERO_C.webp" alt="Portal 3 Primero C"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/2dorm/13_PORTAL3_PRIMERO_C.webp')" />
           </div>
           <div class="vivienda-item 2dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/2dorm/17_PORTAL4_PRIMERO_C.webp" alt="Portal 4 Primero C" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/2dorm/17_PORTAL4_PRIMERO_C.webp')" />
+            <img src="/content/thumbs/fichas/2dorm/17_PORTAL4_PRIMERO_C.webp" alt="Portal 4 Primero C"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/2dorm/17_PORTAL4_PRIMERO_C.webp')" />
           </div>
           <div class="vivienda-item 2dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/2dorm/27_PORTAL3_SEGUNDO_C.webp" alt="Portal 3 Segundo C" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/2dorm/27_PORTAL3_SEGUNDO_C.webp')" />
+            <img src="/content/thumbs/fichas/2dorm/27_PORTAL3_SEGUNDO_C.webp" alt="Portal 3 Segundo C"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/2dorm/27_PORTAL3_SEGUNDO_C.webp')" />
           </div>
           <div class="vivienda-item 2dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/2dorm/31_PORTAL4_SEGUNDO_C.webp" alt="Portal 4 Segundo C" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/2dorm/31_PORTAL4_SEGUNDO_C.webp')" />
+            <img src="/content/thumbs/fichas/2dorm/31_PORTAL4_SEGUNDO_C.webp" alt="Portal 4 Segundo C"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/2dorm/31_PORTAL4_SEGUNDO_C.webp')" />
           </div>
 
           <!-- 3 Dormitorios -->
           <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/03_PORTAL1_PRIMERO_A.webp" alt="Portal 1 Primero A" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/3dorm/03_PORTAL1_PRIMERO_A.webp')" loading="lazy" />
+            <img src="/content/thumbs/fichas/3dorm/03_PORTAL1_PRIMERO_A.webp" alt="Portal 1 Primero A"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/3dorm/03_PORTAL1_PRIMERO_A.webp')" loading="lazy" />
           </div>
           <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/04_PORTAL1_PRIMERO_B.webp" alt="Portal 1 Primero B" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/3dorm/04_PORTAL1_PRIMERO_B.webp')" loading="lazy" />
+            <img src="/content/thumbs/fichas/3dorm/04_PORTAL1_PRIMERO_B.webp" alt="Portal 1 Primero B"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/3dorm/04_PORTAL1_PRIMERO_B.webp')" loading="lazy" />
           </div>
           <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/06_PORTAL1_PRIMERO_D.webp" alt="Portal 1 Primero D" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/3dorm/06_PORTAL1_PRIMERO_D.webp')" loading="lazy" />
+            <img src="/content/thumbs/fichas/3dorm/06_PORTAL1_PRIMERO_D.webp" alt="Portal 1 Primero D"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/3dorm/06_PORTAL1_PRIMERO_D.webp')" loading="lazy" />
           </div>
           <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/07_PORTAL2_PRIMERO_A.webp" alt="Portal 2 Primero A" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/3dorm/07_PORTAL2_PRIMERO_A.webp')" loading="lazy" />
+            <img src="/content/thumbs/fichas/3dorm/07_PORTAL2_PRIMERO_A.webp" alt="Portal 2 Primero A"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/3dorm/07_PORTAL2_PRIMERO_A.webp')" loading="lazy" />
           </div>
           <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/08_PORTAL2_PRIMERO_B.webp" alt="Portal 2 Primero B" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/3dorm/08_PORTAL2_PRIMERO_B.webp')" loading="lazy" />
+            <img src="/content/thumbs/fichas/3dorm/08_PORTAL2_PRIMERO_B.webp" alt="Portal 2 Primero B"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/3dorm/08_PORTAL2_PRIMERO_B.webp')" loading="lazy" />
           </div>
           <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/10_PORTAL2_PRIMERO_D.webp" alt="Portal 2 Primero D" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/3dorm/10_PORTAL2_PRIMERO_D.webp')" loading="lazy" />
+            <img src="/content/thumbs/fichas/3dorm/10_PORTAL2_PRIMERO_D.webp" alt="Portal 2 Primero D"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/3dorm/10_PORTAL2_PRIMERO_D.webp')" loading="lazy" />
           </div>
           <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/11_PORTAL3_PRIMERO_A.webp" alt="Portal 3 Primero A" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/3dorm/11_PORTAL3_PRIMERO_A.webp')" loading="lazy" />
+            <img src="/content/thumbs/fichas/3dorm/11_PORTAL3_PRIMERO_A.webp" alt="Portal 3 Primero A"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/3dorm/11_PORTAL3_PRIMERO_A.webp')" loading="lazy" />
           </div>
           <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/12_PORTAL3_PRIMERO_B.webp" alt="Portal 3 Primero B" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/3dorm/12_PORTAL3_PRIMERO_B.webp')" loading="lazy" />
+            <img src="/content/thumbs/fichas/3dorm/12_PORTAL3_PRIMERO_B.webp" alt="Portal 3 Primero B"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/3dorm/12_PORTAL3_PRIMERO_B.webp')" loading="lazy" />
           </div>
           <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/14_PORTAL3_PRIMERO_D.webp" alt="Portal 3 Primero D" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/3dorm/14_PORTAL3_PRIMERO_D.webp')" loading="lazy" />
+            <img src="/content/thumbs/fichas/3dorm/14_PORTAL3_PRIMERO_D.webp" alt="Portal 3 Primero D"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/3dorm/14_PORTAL3_PRIMERO_D.webp')" loading="lazy" />
           </div>
           <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/15_PORTAL4_PRIMERO_A.webp" alt="Portal 4 Primero A" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/3dorm/15_PORTAL4_PRIMERO_A.webp')" loading="lazy" />
+            <img src="/content/thumbs/fichas/3dorm/15_PORTAL4_PRIMERO_A.webp" alt="Portal 4 Primero A"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/3dorm/15_PORTAL4_PRIMERO_A.webp')" loading="lazy" />
           </div>
           <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/16_PORTAL4_PRIMERO_B.webp" alt="Portal 4 Primero B" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/3dorm/16_PORTAL4_PRIMERO_B.webp')" loading="lazy" />
+            <img src="/content/thumbs/fichas/3dorm/16_PORTAL4_PRIMERO_B.webp" alt="Portal 4 Primero B"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/3dorm/16_PORTAL4_PRIMERO_B.webp')" loading="lazy" />
           </div>
           <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/18_PORTAL4_PRIMERO_D.webp" alt="Portal 4 Primero D" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/3dorm/18_PORTAL4_PRIMERO_D.webp')" loading="lazy" />
+            <img src="/content/thumbs/fichas/3dorm/18_PORTAL4_PRIMERO_D.webp" alt="Portal 4 Primero D"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/3dorm/18_PORTAL4_PRIMERO_D.webp')" loading="lazy" />
           </div>
           <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/19_PORTAL1_SEGUNDO_A.webp" alt="Portal 1 Segundo A" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/3dorm/19_PORTAL1_SEGUNDO_A.webp')" loading="lazy" />
+            <img src="/content/thumbs/fichas/3dorm/19_PORTAL1_SEGUNDO_A.webp" alt="Portal 1 Segundo A"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/3dorm/19_PORTAL1_SEGUNDO_A.webp')" loading="lazy" />
           </div>
           <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/20_PORTAL1_SEGUNDO_B.webp" alt="Portal 1 Segundo B" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/3dorm/20_PORTAL1_SEGUNDO_B.webp')" loading="lazy" />
+            <img src="/content/thumbs/fichas/3dorm/20_PORTAL1_SEGUNDO_B.webp" alt="Portal 1 Segundo B"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/3dorm/20_PORTAL1_SEGUNDO_B.webp')" loading="lazy" />
           </div>
           <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/22_PORTAL2_SEGUNDO_A.webp" alt="Portal 2 Segundo A" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/3dorm/22_PORTAL2_SEGUNDO_A.webp')" loading="lazy" />
+            <img src="/content/thumbs/fichas/3dorm/22_PORTAL2_SEGUNDO_A.webp" alt="Portal 2 Segundo A"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/3dorm/22_PORTAL2_SEGUNDO_A.webp')" loading="lazy" />
           </div>
           <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/23_PORTAL2_SEGUNDO_B.webp" alt="Portal 2 Segundo B" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/3dorm/23_PORTAL2_SEGUNDO_B.webp')" loading="lazy" />
+            <img src="/content/thumbs/fichas/3dorm/23_PORTAL2_SEGUNDO_B.webp" alt="Portal 2 Segundo B"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/3dorm/23_PORTAL2_SEGUNDO_B.webp')" loading="lazy" />
           </div>
           <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/25_PORTAL3_SEGUNDO_A.webp" alt="Portal 3 Segundo A" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/3dorm/25_PORTAL3_SEGUNDO_A.webp')" loading="lazy" />
+            <img src="/content/thumbs/fichas/3dorm/25_PORTAL3_SEGUNDO_A.webp" alt="Portal 3 Segundo A"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/3dorm/25_PORTAL3_SEGUNDO_A.webp')" loading="lazy" />
           </div>
           <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/26_PORTAL3_SEGUNDO_B.webp" alt="Portal 3 Segundo B" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/3dorm/26_PORTAL3_SEGUNDO_B.webp')" loading="lazy" />
+            <img src="/content/thumbs/fichas/3dorm/26_PORTAL3_SEGUNDO_B.webp" alt="Portal 3 Segundo B"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/3dorm/26_PORTAL3_SEGUNDO_B.webp')" loading="lazy" />
           </div>
           <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/28_PORTAL3_SEGUNDO_D.webp" alt="Portal 3 Segundo D" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/3dorm/28_PORTAL3_SEGUNDO_D.webp')" loading="lazy" />
+            <img src="/content/thumbs/fichas/3dorm/28_PORTAL3_SEGUNDO_D.webp" alt="Portal 3 Segundo D"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/3dorm/28_PORTAL3_SEGUNDO_D.webp')" loading="lazy" />
           </div>
           <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/29_PORTAL4_SEGUNDO_A.webp" alt="Portal 4 Segundo A" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/3dorm/29_PORTAL4_SEGUNDO_A.webp')" loading="lazy" />
+            <img src="/content/thumbs/fichas/3dorm/29_PORTAL4_SEGUNDO_A.webp" alt="Portal 4 Segundo A"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/3dorm/29_PORTAL4_SEGUNDO_A.webp')" loading="lazy" />
           </div>
           <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/30_PORTAL4_SEGUNDO_B.webp" alt="Portal 4 Segundo B" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/3dorm/30_PORTAL4_SEGUNDO_B.webp')" loading="lazy" />
+            <img src="/content/thumbs/fichas/3dorm/30_PORTAL4_SEGUNDO_B.webp" alt="Portal 4 Segundo B"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/3dorm/30_PORTAL4_SEGUNDO_B.webp')" loading="lazy" />
           </div>
           <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/32_PORTAL4_SEGUNDO_D.webp" alt="Portal 4 Segundo D" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/3dorm/32_PORTAL4_SEGUNDO_D.webp')" loading="lazy" />
+            <img src="/content/thumbs/fichas/3dorm/32_PORTAL4_SEGUNDO_D.webp" alt="Portal 4 Segundo D"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/3dorm/32_PORTAL4_SEGUNDO_D.webp')" loading="lazy" />
           </div>
           <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/33_PORTAL1_ATICO_A.webp" alt="Portal 1 Ático A" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/3dorm/33_PORTAL1_ATICO_A.webp')" loading="lazy" />
+            <img src="/content/thumbs/fichas/3dorm/33_PORTAL1_ATICO_A.webp" alt="Portal 1 Ático A"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/3dorm/33_PORTAL1_ATICO_A.webp')" loading="lazy" />
           </div>
           <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/34_PORTAL1_ATICO_B.webp" alt="Portal 1 Ático B" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/3dorm/34_PORTAL1_ATICO_B.webp')" loading="lazy" />
+            <img src="/content/thumbs/fichas/3dorm/34_PORTAL1_ATICO_B.webp" alt="Portal 1 Ático B"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/3dorm/34_PORTAL1_ATICO_B.webp')" loading="lazy" />
           </div>
           <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/35_PORTAL1_ATICO_C.webp" alt="Portal 1 Ático C" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/3dorm/35_PORTAL1_ATICO_C.webp')" loading="lazy" />
+            <img src="/content/thumbs/fichas/3dorm/35_PORTAL1_ATICO_C.webp" alt="Portal 1 Ático C"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/3dorm/35_PORTAL1_ATICO_C.webp')" loading="lazy" />
           </div>
           <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/36_PORTAL2_ATICO_A.webp" alt="Portal 2 Ático A" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/3dorm/36_PORTAL2_ATICO_A.webp')" loading="lazy" />
+            <img src="/content/thumbs/fichas/3dorm/36_PORTAL2_ATICO_A.webp" alt="Portal 2 Ático A"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/3dorm/36_PORTAL2_ATICO_A.webp')" loading="lazy" />
           </div>
           <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/37_PORTAL2_ATICO_B.webp" alt="Portal 2 Ático B" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/3dorm/37_PORTAL2_ATICO_B.webp')" loading="lazy" />
+            <img src="/content/thumbs/fichas/3dorm/37_PORTAL2_ATICO_B.webp" alt="Portal 2 Ático B"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/3dorm/37_PORTAL2_ATICO_B.webp')" loading="lazy" />
           </div>
           <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/38_PORTAL2_ATICO_C.webp" alt="Portal 2 Ático C" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/3dorm/38_PORTAL2_ATICO_C.webp')" loading="lazy" />
+            <img src="/content/thumbs/fichas/3dorm/38_PORTAL2_ATICO_C.webp" alt="Portal 2 Ático C"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/3dorm/38_PORTAL2_ATICO_C.webp')" loading="lazy" />
           </div>
           <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/39_PORTAL3_ATICO_A.webp" alt="Portal 3 Ático A" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/3dorm/39_PORTAL3_ATICO_A.webp')" loading="lazy" />
+            <img src="/content/thumbs/fichas/3dorm/39_PORTAL3_ATICO_A.webp" alt="Portal 3 Ático A"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/3dorm/39_PORTAL3_ATICO_A.webp')" loading="lazy" />
           </div>
           <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/40_PORTAL3_ATICO_B.webp" alt="Portal 3 Ático B" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/3dorm/40_PORTAL3_ATICO_B.webp')" loading="lazy" />
+            <img src="/content/thumbs/fichas/3dorm/40_PORTAL3_ATICO_B.webp" alt="Portal 3 Ático B"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/3dorm/40_PORTAL3_ATICO_B.webp')" loading="lazy" />
           </div>
           <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/41_PORTAL3_ATICO_C.webp" alt="Portal 3 Ático C" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/3dorm/41_PORTAL3_ATICO_C.webp')" loading="lazy" />
+            <img src="/content/thumbs/fichas/3dorm/41_PORTAL3_ATICO_C.webp" alt="Portal 3 Ático C"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/3dorm/41_PORTAL3_ATICO_C.webp')" loading="lazy" />
           </div>
           <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/42_PORTAL4_ATICO_A.webp" alt="Portal 4 Ático A" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/3dorm/42_PORTAL4_ATICO_A.webp')" loading="lazy" />
+            <img src="/content/thumbs/fichas/3dorm/42_PORTAL4_ATICO_A.webp" alt="Portal 4 Ático A"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/3dorm/42_PORTAL4_ATICO_A.webp')" loading="lazy" />
           </div>
           <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/43_PORTAL4_ATICO_B.webp" alt="Portal 4 Ático B" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/3dorm/43_PORTAL4_ATICO_B.webp')" loading="lazy" />
+            <img src="/content/thumbs/fichas/3dorm/43_PORTAL4_ATICO_B.webp" alt="Portal 4 Ático B"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/3dorm/43_PORTAL4_ATICO_B.webp')" loading="lazy" />
           </div>
           <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/44_PORTAL4_ATICO_C.webp" alt="Portal 4 Ático C" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/3dorm/44_PORTAL4_ATICO_C.webp')" loading="lazy" />
+            <img src="/content/thumbs/fichas/3dorm/44_PORTAL4_ATICO_C.webp" alt="Portal 4 Ático C"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/3dorm/44_PORTAL4_ATICO_C.webp')" loading="lazy" />
           </div>
 
           <!-- 4 Dormitorios -->
           <div class="vivienda-item 4dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/4dorm/21_PORTAL1_SEGUNDO_C.webp" alt="Portal 1 Segundo C" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/4dorm/21_PORTAL1_SEGUNDO_C.webp')" loading="lazy" />
+            <img src="/content/thumbs/fichas/4dorm/21_PORTAL1_SEGUNDO_C.webp" alt="Portal 1 Segundo C"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/4dorm/21_PORTAL1_SEGUNDO_C.webp')" loading="lazy" />
           </div>
           <div class="vivienda-item 4dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/4dorm/24_PORTAL2_SEGUNDO_C.webp" alt="Portal 2 Segundo C" class="w-full h-64 object-cover cursor-pointer" onclick="openFichaModal('/content/full/fichas/4dorm/24_PORTAL2_SEGUNDO_C.webp')" loading="lazy" />
+            <img src="/content/thumbs/fichas/4dorm/24_PORTAL2_SEGUNDO_C.webp" alt="Portal 2 Segundo C"
+              class="w-full h-64 object-cover cursor-pointer"
+              onclick="openFichaModal('/content/full/fichas/4dorm/24_PORTAL2_SEGUNDO_C.webp')" loading="lazy" />
           </div>
         </div>
       </div>
@@ -316,14 +420,16 @@
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Ubicación privilegiada</h2>
         <div class="grid md:grid-cols-5 gap-8 items-center">
           <div class="md:col-span-3">
-            <iframe width="100%" height="500" src="https://www.openstreetmap.org/export/embed.html?bbox=-4.737349748611451%2C41.57501945019823%2C-4.719432592391969%2C41.58221044262433&amp;layer=mapnik&amp;marker=41.57861504649745%2C-4.728391170501709" style="border: 1px solid black"></iframe>
+            <iframe width="100%" height="500"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-4.737349748611451%2C41.57501945019823%2C-4.719432592391969%2C41.58221044262433&amp;layer=mapnik&amp;marker=41.57861504649745%2C-4.728391170501709"
+              style="border: 1px solid black"></iframe>
           </div>
           <div class="space-y-6 md:col-start-4 md:col-span-2">
             <div class="flex items-start gap-4">
               <div>
                 <h3 class="text-xl font-bold mb-2">Dirección</h3>
                 <p class="text-gray-500">
-                  C/ Avelino Hernandez Lucas, Laguna de Duero, Valladolid
+                  C/ Francisco Quevedo Laguna de Duero, Valladolid
                 </p>
               </div>
             </div>
@@ -350,14 +456,25 @@
             </p>
             <div class="space-y-4">
               <div class="flex items-center gap-4 md:text-xl">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-primary"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-6 h-6 text-primary">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
                 <p>983 33 69 83</p>
               </div>
               <div class="flex items-center gap-4 md:text-xl">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-primary"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-6 h-6 text-primary">
+                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
                 <a href="mailto:rosariopachon@torcasa.es">rosariopachon@torcasa.es</a>
               </div>
-              
+
             </div>
           </div>
           <div class="bg-foreground p-6 rounded-lg">
@@ -367,22 +484,26 @@
                   <label for="nombre" class="block text-sm font-medium mb-2">
                     Nombre
                   </label>
-                  <input id="nombre" placeholder="Tu nombre" name="nombre" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" />
+                  <input id="nombre" placeholder="Tu nombre" name="nombre"
+                    class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" />
                 </div>
               </div>
               <div>
                 <label for="telefono" class="block text-sm font-medium mb-2">
                   Teléfono
                 </label>
-                <input id="telefono" type="tel" placeholder="Tu teléfono" name="telefono" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" />
+                <input id="telefono" type="tel" placeholder="Tu teléfono" name="telefono"
+                  class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" />
               </div>
               <div>
                 <label for="mensaje" class="block text-sm font-medium mb-2">
                   Mensaje
                 </label>
-                <textarea id="mensaje" placeholder="¿Qué te gustaría saber?" name="mensaje" class="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">Hola, me interesa esta promoción y me gustaría hacer una visita. Un saludo</textarea>
+                <textarea id="mensaje" placeholder="¿Qué te gustaría saber?" name="mensaje"
+                  class="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">Hola, me interesa esta promoción y me gustaría hacer una visita. Un saludo</textarea>
               </div>
-              <button type="submit" class="w-full inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-white hover:bg-primary/90 h-10 px-4 py-2">
+              <button type="submit"
+                class="w-full inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-white hover:bg-muted h-10 px-4 py-2">
                 Enviar
               </button>
             </form>
@@ -391,8 +512,9 @@
       </div>
     </section>
 
-     <!-- Modal para imágenes -->
-    <div id="imageModal" class="fixed z-50 inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden" onclick="closeModal(event)">
+    <!-- Modal para imágenes -->
+    <div id="imageModal" class="fixed z-50 inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden p-16"
+      onclick="closeModal(event)">
       <span class="absolute top-4 right-4 text-white text-3xl cursor-pointer" onclick="closeModal(event)">&times;</span>
       <span class="absolute left-4 text-white text-3xl cursor-pointer" onclick="prevImage(event)">&#10094;</span>
       <span class="absolute right-4 text-white text-3xl cursor-pointer" onclick="nextImage(event)">&#10095;</span>
@@ -400,19 +522,23 @@
     </div>
 
     <!-- Modal para planos -->
-    <div id="planoModal" class="fixed z-50 inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden" onclick="closeModal(event)">
-      <span class="absolute top-4 right-4  text-white text-3xl cursor-pointer" onclick="closeModal(event)">&times;</span>
+    <div id="planoModal" class="fixed z-50 inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden"
+      onclick="closeModal(event)">
+      <span class="absolute top-4 right-4  text-white text-3xl cursor-pointer"
+        onclick="closeModal(event)">&times;</span>
       <img id="modalPlan" class="max-w-full max-h-full">
     </div>
 
     <!-- Modal para iframes -->
-    <div id="iframeModal" class="fixed z-50 inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden" onclick="closeIframeModal(event)">
-      <span class="absolute top-24 right-24 px-4 pb-3 pt-1 text-white bg-red-500 rounded-full text-3xl cursor-pointer" onclick="closeIframeModal(event)">&times;</span>
+    <div id="iframeModal" class="fixed z-50 inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden"
+      onclick="closeIframeModal(event)">
+      <span class="absolute top-24 right-24 px-4 pb-3 pt-1 text-white bg-red-500 rounded-full text-3xl cursor-pointer"
+        onclick="closeIframeModal(event)">&times;</span>
       <iframe id="modalIframe" class="border-2 border-white w-11/12 h-5/6"></iframe>
     </div>
 
   </main>
-   
+
   <footer class="border-t py-8">
     <div class="container">
       <div class="grid md:grid-cols-2 gap-8">
@@ -422,11 +548,11 @@
             Más de 43 años construyendo hogares.
           </p>
         </div>
-        
-       
+
+
       </div>
       <div class="mt-8 pt-8 border-t text-center text-sm text-gray-500">
-      
+
       </div>
     </div>
   </footer>
