@@ -7,7 +7,7 @@
   <meta name="description"
     content="Berey II es tu nuevo hogar en Laguna de Duero, con terrazas amplias, piscina y rodeado de naturaleza. Descubre nuestras viviendas de 2, 3 y 4 dormitorios diseñadas para tu confort y calidad de vida.">
   <title>Berey II</title>
-  <link rel="icon" type="image/svg" href="/content/iconos/torcasa.webp">
+  <link rel="icon" type="image/png" href="/content/iconos/torcasa-favicon.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="/index.js"></script>
   <script>
@@ -170,247 +170,31 @@
       <div class="container">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Viviendas disponibles</h2>
 
-        <!-- Filtros -->
-        <div class="flex flex-col sm:flex-row justify-center gap-4 mb-8">
-          <button onclick="filterViviendas('2dorm')"
-            class="filter-btn active px-6 py-2 rounded-md bg-primary text-white hover:bg-muted hover:text-white transition-colors">
-            <span class="pointer-events-none">2 dormitorios</span>
-          </button>
-          <button onclick="filterViviendas('3dorm')"
-            class="filter-btn px-6 py-2 rounded-md hover:bg-muted hover:text-white transition-colors">
-            <span class="pointer-events-none">3 dormitorios</span>
-          </button>
-          <button onclick="filterViviendas('4dorm')"
-            class="filter-btn px-6 py-2 rounded-md hover:bg-muted hover:text-white transition-colors">
-            <span class="pointer-events-none">4 dormitorios</span>
-          </button>
-        </div>
-
         <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="viviendasGrid">
-          <!-- 2 Dormitorios -->
           <div class="vivienda-item 2dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/2dorm/01_PORTAL1_BAJO_A.webp" alt="Portal 1 Bajo A"
+            <img src="/content/thumbs/fichas/FICHA VIVIENDA 1 (1).webp" alt="Vivienda 1"
               class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/2dorm/01_PORTAL1_BAJO_A.webp')" />
-          </div>
-          <div class="vivienda-item 2dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/2dorm/02_PORTAL4_BAJO_A.webp" alt="Portal 4 Bajo A"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/2dorm/02_PORTAL4_BAJO_A.webp')" />
+              onclick="openFichaModal('/content/full/fichas/FICHA VIVIENDA 1.webp')" />
           </div>
           <div class="vivienda-item 2dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/2dorm/05_PORTAL1_PRIMERO_C.webp" alt="Portal 1 Primero C"
+            <img src="/content/thumbs/fichas/FICHA VIVIENDA 15 (1).webp" alt="Vivienda 15"
               class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/2dorm/05_PORTAL1_PRIMERO_C.webp')" />
+              onclick="openFichaModal('/content/full/fichas/FICHA VIVIENDA 15.webp')" />
           </div>
           <div class="vivienda-item 2dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/2dorm/09_PORTAL2_PRIMERO_C.webp" alt="Portal 2 Primero C"
+            <img src="/content/thumbs/fichas/FICHA VIVIENDA 2-4-6-8-10-12-17-19-25-27_vestidor (1).webp" alt="Vivienda 2-4-6-8-10-12-17-19-25-27"
               class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/2dorm/09_PORTAL2_PRIMERO_C.webp')" />
+              onclick="openFichaModal('/content/full/fichas/FICHA VIVIENDA 2-4-6-8-10-12-17-19-25-27_vestidor.webp')" />
           </div>
           <div class="vivienda-item 2dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/2dorm/13_PORTAL3_PRIMERO_C.webp" alt="Portal 3 Primero C"
+            <img src="/content/thumbs/fichas/FICHA VIVIENDA 20-22_vestidor (1).webp" alt="Vivienda 20-22"
               class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/2dorm/13_PORTAL3_PRIMERO_C.webp')" />
+              onclick="openFichaModal('/content/full/fichas/FICHA VIVIENDA 20-22_vestidor.webp')" />
           </div>
           <div class="vivienda-item 2dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/2dorm/17_PORTAL4_PRIMERO_C.webp" alt="Portal 4 Primero C"
+            <img src="/content/thumbs/fichas/FICHA VIVIENDA 3-5-7-9-11-13-16-18-24-26_vestidor (1).webp" alt="Vivienda 3-5-7-9-11-13-16-18-24-26"
               class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/2dorm/17_PORTAL4_PRIMERO_C.webp')" />
-          </div>
-          <div class="vivienda-item 2dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/2dorm/27_PORTAL3_SEGUNDO_C.webp" alt="Portal 3 Segundo C"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/2dorm/27_PORTAL3_SEGUNDO_C.webp')" />
-          </div>
-          <div class="vivienda-item 2dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/2dorm/31_PORTAL4_SEGUNDO_C.webp" alt="Portal 4 Segundo C"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/2dorm/31_PORTAL4_SEGUNDO_C.webp')" />
-          </div>
-
-          <!-- 3 Dormitorios -->
-          <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/03_PORTAL1_PRIMERO_A.webp" alt="Portal 1 Primero A"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/3dorm/03_PORTAL1_PRIMERO_A.webp')" loading="lazy" />
-          </div>
-          <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/04_PORTAL1_PRIMERO_B.webp" alt="Portal 1 Primero B"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/3dorm/04_PORTAL1_PRIMERO_B.webp')" loading="lazy" />
-          </div>
-          <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/06_PORTAL1_PRIMERO_D.webp" alt="Portal 1 Primero D"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/3dorm/06_PORTAL1_PRIMERO_D.webp')" loading="lazy" />
-          </div>
-          <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/07_PORTAL2_PRIMERO_A.webp" alt="Portal 2 Primero A"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/3dorm/07_PORTAL2_PRIMERO_A.webp')" loading="lazy" />
-          </div>
-          <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/08_PORTAL2_PRIMERO_B.webp" alt="Portal 2 Primero B"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/3dorm/08_PORTAL2_PRIMERO_B.webp')" loading="lazy" />
-          </div>
-          <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/10_PORTAL2_PRIMERO_D.webp" alt="Portal 2 Primero D"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/3dorm/10_PORTAL2_PRIMERO_D.webp')" loading="lazy" />
-          </div>
-          <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/11_PORTAL3_PRIMERO_A.webp" alt="Portal 3 Primero A"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/3dorm/11_PORTAL3_PRIMERO_A.webp')" loading="lazy" />
-          </div>
-          <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/12_PORTAL3_PRIMERO_B.webp" alt="Portal 3 Primero B"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/3dorm/12_PORTAL3_PRIMERO_B.webp')" loading="lazy" />
-          </div>
-          <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/14_PORTAL3_PRIMERO_D.webp" alt="Portal 3 Primero D"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/3dorm/14_PORTAL3_PRIMERO_D.webp')" loading="lazy" />
-          </div>
-          <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/15_PORTAL4_PRIMERO_A.webp" alt="Portal 4 Primero A"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/3dorm/15_PORTAL4_PRIMERO_A.webp')" loading="lazy" />
-          </div>
-          <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/16_PORTAL4_PRIMERO_B.webp" alt="Portal 4 Primero B"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/3dorm/16_PORTAL4_PRIMERO_B.webp')" loading="lazy" />
-          </div>
-          <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/18_PORTAL4_PRIMERO_D.webp" alt="Portal 4 Primero D"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/3dorm/18_PORTAL4_PRIMERO_D.webp')" loading="lazy" />
-          </div>
-          <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/19_PORTAL1_SEGUNDO_A.webp" alt="Portal 1 Segundo A"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/3dorm/19_PORTAL1_SEGUNDO_A.webp')" loading="lazy" />
-          </div>
-          <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/20_PORTAL1_SEGUNDO_B.webp" alt="Portal 1 Segundo B"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/3dorm/20_PORTAL1_SEGUNDO_B.webp')" loading="lazy" />
-          </div>
-          <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/22_PORTAL2_SEGUNDO_A.webp" alt="Portal 2 Segundo A"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/3dorm/22_PORTAL2_SEGUNDO_A.webp')" loading="lazy" />
-          </div>
-          <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/23_PORTAL2_SEGUNDO_B.webp" alt="Portal 2 Segundo B"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/3dorm/23_PORTAL2_SEGUNDO_B.webp')" loading="lazy" />
-          </div>
-          <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/25_PORTAL3_SEGUNDO_A.webp" alt="Portal 3 Segundo A"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/3dorm/25_PORTAL3_SEGUNDO_A.webp')" loading="lazy" />
-          </div>
-          <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/26_PORTAL3_SEGUNDO_B.webp" alt="Portal 3 Segundo B"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/3dorm/26_PORTAL3_SEGUNDO_B.webp')" loading="lazy" />
-          </div>
-          <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/28_PORTAL3_SEGUNDO_D.webp" alt="Portal 3 Segundo D"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/3dorm/28_PORTAL3_SEGUNDO_D.webp')" loading="lazy" />
-          </div>
-          <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/29_PORTAL4_SEGUNDO_A.webp" alt="Portal 4 Segundo A"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/3dorm/29_PORTAL4_SEGUNDO_A.webp')" loading="lazy" />
-          </div>
-          <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/30_PORTAL4_SEGUNDO_B.webp" alt="Portal 4 Segundo B"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/3dorm/30_PORTAL4_SEGUNDO_B.webp')" loading="lazy" />
-          </div>
-          <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/32_PORTAL4_SEGUNDO_D.webp" alt="Portal 4 Segundo D"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/3dorm/32_PORTAL4_SEGUNDO_D.webp')" loading="lazy" />
-          </div>
-          <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/33_PORTAL1_ATICO_A.webp" alt="Portal 1 Ático A"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/3dorm/33_PORTAL1_ATICO_A.webp')" loading="lazy" />
-          </div>
-          <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/34_PORTAL1_ATICO_B.webp" alt="Portal 1 Ático B"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/3dorm/34_PORTAL1_ATICO_B.webp')" loading="lazy" />
-          </div>
-          <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/35_PORTAL1_ATICO_C.webp" alt="Portal 1 Ático C"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/3dorm/35_PORTAL1_ATICO_C.webp')" loading="lazy" />
-          </div>
-          <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/36_PORTAL2_ATICO_A.webp" alt="Portal 2 Ático A"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/3dorm/36_PORTAL2_ATICO_A.webp')" loading="lazy" />
-          </div>
-          <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/37_PORTAL2_ATICO_B.webp" alt="Portal 2 Ático B"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/3dorm/37_PORTAL2_ATICO_B.webp')" loading="lazy" />
-          </div>
-          <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/38_PORTAL2_ATICO_C.webp" alt="Portal 2 Ático C"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/3dorm/38_PORTAL2_ATICO_C.webp')" loading="lazy" />
-          </div>
-          <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/39_PORTAL3_ATICO_A.webp" alt="Portal 3 Ático A"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/3dorm/39_PORTAL3_ATICO_A.webp')" loading="lazy" />
-          </div>
-          <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/40_PORTAL3_ATICO_B.webp" alt="Portal 3 Ático B"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/3dorm/40_PORTAL3_ATICO_B.webp')" loading="lazy" />
-          </div>
-          <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/41_PORTAL3_ATICO_C.webp" alt="Portal 3 Ático C"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/3dorm/41_PORTAL3_ATICO_C.webp')" loading="lazy" />
-          </div>
-          <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/42_PORTAL4_ATICO_A.webp" alt="Portal 4 Ático A"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/3dorm/42_PORTAL4_ATICO_A.webp')" loading="lazy" />
-          </div>
-          <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/43_PORTAL4_ATICO_B.webp" alt="Portal 4 Ático B"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/3dorm/43_PORTAL4_ATICO_B.webp')" loading="lazy" />
-          </div>
-          <div class="vivienda-item 3dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/3dorm/44_PORTAL4_ATICO_C.webp" alt="Portal 4 Ático C"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/3dorm/44_PORTAL4_ATICO_C.webp')" loading="lazy" />
-          </div>
-
-          <!-- 4 Dormitorios -->
-          <div class="vivienda-item 4dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/4dorm/21_PORTAL1_SEGUNDO_C.webp" alt="Portal 1 Segundo C"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/4dorm/21_PORTAL1_SEGUNDO_C.webp')" loading="lazy" />
-          </div>
-          <div class="vivienda-item 4dorm rounded-lg overflow-hidden border hover:shadow-lg transition-shadow">
-            <img src="/content/thumbs/fichas/4dorm/24_PORTAL2_SEGUNDO_C.webp" alt="Portal 2 Segundo C"
-              class="w-full h-64 object-cover cursor-pointer"
-              onclick="openFichaModal('/content/full/fichas/4dorm/24_PORTAL2_SEGUNDO_C.webp')" loading="lazy" />
+              onclick="openFichaModal('/content/full/fichas/FICHA VIVIENDA 3-5-7-9-11-13-16-18-24-26_vestidor.webp')" />
           </div>
         </div>
       </div>
