@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Residencial Berey es tu nuevo hogar en Laguna de Duero, con terrazas amplias, piscina y rodeado de naturaleza. Descubre nuestras viviendas de 2, 3 y 4 dormitorios diseñadas para tu confort y calidad de vida.">
-  <title>Residencial Berey</title>
+    content="Berey II es tu nuevo hogar en Laguna de Duero, con terrazas amplias, piscina y rodeado de naturaleza. Descubre nuestras viviendas de 2, 3 y 4 dormitorios diseñadas para tu confort y calidad de vida.">
+  <title>Berey II</title>
   <link rel="icon" type="image/svg" href="/content/iconos/torcasa.webp">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="/index.js"></script>
@@ -15,10 +15,10 @@
       theme: {
         extend: {
           colors: {
-            primary: 'hsl(14, 23%, 64%)',
-            muted: 'hsl(14, 23%, 44%)',
+            primary: 'hsl(33.33deg 48.29% 59.8%)',
+            muted: 'hsl(33.33deg 48.29% 49.8%)',
             background: '#ffffff',
-            foreground: '#f3f4f6',
+            foreground: 'hsl(32.73deg 40.74% 94.71%)',
           },
           screens: {
             'xs': '414px',
@@ -41,7 +41,7 @@
   <header id="header" class="fixed top-0 z-50 w-full transition-all duration-300">
     <div class="container flex h-16 md:h-24 items-center justify-between">
       <a href="#inicio" class="flex items-center space-x-2">
-        <span id="headerTitle" class="text-xl md:text-2xl font-bold text-white">Residencial Berey</span>
+        <span id="headerTitle" class="text-xl md:text-2xl font-bold text-white">Berey II</span>
       </a>
       <nav id="headerNav" class="hidden md:flex gap-6">
         <a href="#caracteristicas"
@@ -141,7 +141,7 @@
           </div>
           <!-- Imagen -->
           <div class="order-1 md:order-2">
-            <img src="/content/full/imagenes/VISTA-ESQUINA-CALIDAD-INTERNET-scaled (3).webp" alt="Residencial Berey"
+            <img src="/content/full/imagenes/VISTA-ESQUINA-CALIDAD-INTERNET-scaled (3).webp" alt="Berey II"
               class="rounded-lg shadow-lg object-cover w-full h-80 md:h-full">
           </div>
         </div>
@@ -415,6 +415,10 @@
         </div>
       </div>
     </section>
+    <div class="mt-8 pt-8 border-t m-[11vw] border-primary text-center text-sm text-orange-600">
+
+    </div>
+    
     <section id="ubicacion" class="py-16 md:py-24">
       <div class="container">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Ubicación privilegiada</h2>
@@ -445,12 +449,12 @@
         </div>
       </div>
     </section>
-    <section id="contacto" class="py-16 md:py-24 bg-foreground">
+    <section id="contacto" class="py-16 md:py-24 bg-primary">
       <div class="container">
         <div class="grid md:grid-cols-2 gap-8">
           <div>
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">¿Quieres más información del proyecto?</h2>
-            <p class="text-gray-500 mb-8">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">¿Quieres más información del proyecto?</h2>
+            <p class="text-gray-500 mb-8 text-white">
               Rellena el formulario y nuestro equipo comercial se pondrá en contacto contigo para resolver todas tus
               dudas.
             </p>
@@ -458,26 +462,26 @@
               <div class="flex items-center gap-4 md:text-xl">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="w-6 h-6 text-primary">
+                  class="w-6 h-6 text-white">
                   <path
                     d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
                   </path>
                 </svg>
-                <p>983 33 69 83</p>
+                <p class="text-white">983 33 69 83</p>
               </div>
               <div class="flex items-center gap-4 md:text-xl">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="w-6 h-6 text-primary">
+                  class="w-6 h-6 text-white">
                   <rect width="20" height="16" x="2" y="4" rx="2"></rect>
                   <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
                 </svg>
-                <a href="mailto:rosariopachon@torcasa.es">rosariopachon@torcasa.es</a>
+                <a href="mailto:rosariopachon@torcasa.es" class="text-white">rosariopachon@torcasa.es</a>
               </div>
 
             </div>
           </div>
-          <div class="bg-foreground p-6 rounded-lg">
+          <div class="bg-primary p-6 rounded-lg">
             <form class="space-y-4" action="" method="POST">
               <div class="grid md:grid-cols-1 gap-4">
                 <div>
@@ -503,7 +507,7 @@
                   class="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">Hola, me interesa esta promoción y me gustaría hacer una visita. Un saludo</textarea>
               </div>
               <button type="submit"
-                class="w-full inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-white hover:bg-muted h-10 px-4 py-2">
+                class="w-full inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-foreground text-black hover:text-white hover:bg-muted h-10 px-4 py-2">
                 Enviar
               </button>
             </form>
